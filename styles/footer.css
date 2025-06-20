@@ -1,0 +1,26 @@
+.footer {
+  padding: 40px 72px;
+  background-color: #e3d8fd;
+}
+.footer__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__row:last-child {
+  margin-top: 48px;
+}
+.footer__socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.footer__link {
+  text-decoration: none;
+  color: #000;
+}
+.footer__link:last-child {
+  margin-left: 20px;
+}
