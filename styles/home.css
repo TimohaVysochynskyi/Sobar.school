@@ -30,6 +30,14 @@
 .about__col:last-child {
   width: 60%;
 }
+.about__img {
+  width: 270px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 140px 140px 24px 24px;
+  border: 18px solid #ffeec4;
+  box-shadow: 2px 2px 4px #888;
+}
 .about__text {
   margin-top: 24px;
 }
@@ -191,12 +199,10 @@
 .sign__img {
   width: 100%;
   height: auto;
-  max-width: 660px;
   object-fit: contain;
 }
 .sign__form-wrapper {
   width: 100%;
-  max-width: 590px;
   min-height: 550px;
   padding: 60px 40px;
   border-radius: 48px;
