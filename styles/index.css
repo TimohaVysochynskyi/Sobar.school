@@ -21,6 +21,12 @@ body {
   font-family: "Montserrat Alternates Medium", sans-serif;
   padding: 16px 20px;
   text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.purple-btn:hover {
+  background-color: #8f7cc9;
+  color: #fff;
 }
 .section-title {
   font-size: 32px;

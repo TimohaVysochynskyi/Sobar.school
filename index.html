@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./styles/footer.css">
 
     <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/animate.css">
+
 </head>
 
 <body>
@@ -44,10 +46,10 @@
 
         <!-- ABOUT US -->
         <section class="about">
-            <div class="about__col">
+            <div class="about__col wow fadeInLeft">
                 <img src="./assets/img/author-img.webp" alt="Про мене" class="about__img">
             </div>
-            <div class="about__col">
+            <div class="about__col wow fadeInRight">
                 <h3 class="section-title">Наша місія та цінності</h3>
                 <p class="text-regular about__text">Онлайн-простір корекції та розвитку створено, аби кожна дитина з
                     особливими освітніми потребами мала доступ до якісної, професійної допомоги, незалежно від місця
@@ -76,9 +78,9 @@
 
         <!-- SERVICES -->
         <section class="services">
-            <h3 class="section-title">Наші послуги</h3>
+            <h3 class="section-title wow bounceInLeft">Наші послуги</h3>
             <ul class="services__list">
-                <li class="services__item">
+                <li class="services__item wow fadeInLeft">
                     <a href="" class="services__item-link services__item-link--1">
                         <img src="./assets/img/services/1.png" alt="Корекційно-розвиткові заняття"
                             class="services__item-img">
@@ -91,7 +93,7 @@
 
                     </a>
                 </li>
-                <li class="services__item">
+                <li class="services__item wow fadeInUp">
                     <a href="" class="services__item-link services__item-link--2">
                         <img src="./assets/img/services/2.png" alt="Англійська мова з нуля для дітей з ООП"
                             class="services__item-img">
@@ -104,7 +106,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="services__item">
+                <li class="services__item wow fadeInUp">
                     <a href="" class="services__item-link services__item-link--3">
                         <img src="./assets/img/services/parents.png" alt="Курси для батьків" class="services__item-img">
                         <div class="services__item-content">
@@ -116,7 +118,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="services__item">
+                <li class="services__item wow fadeInRight">
                     <a href="" class="services__item-link services__item-link--4">
                         <img src="./assets/img/services/consultations.png" alt="Консультації"
                             class="services__item-img">
@@ -133,9 +135,9 @@
 
         <!-- FEEDBACKS -->
         <section class="feedbacks">
-            <h3 class="section-title">Відгуки</h3>
+            <h3 class="section-title wow bounceInDown">Відгуки</h3>
             <ul class="feedbacks__list">
-                <li class="feedbacks__item">
+                <li class="feedbacks__item wow fadeInLeft">
                     <span class="feedbacks__item-date">09.06.2025</span><img src="./assets/img/feedbacks/1.png"
                         alt="Відгук від користувача 1" class="feedbacks__item-img">
                     <h4 class="feedbacks__item-name">Ольга</h4>
@@ -145,7 +147,7 @@
                         сильний поштовх і віру в
                         свої здібності) Без ваших занять не було б такого результату ♥️</p>
                 </li>
-                <li class="feedbacks__item">
+                <li class="feedbacks__item wow fadeInUp">
                     <span class="feedbacks__item-date">13.02.2023</span><img src="./assets/img/feedbacks/2.png"
                         alt="Відгук від користувача 2" class="feedbacks__item-img">
                     <h4 class="feedbacks__item-name">Олеся</h4>
@@ -153,7 +155,7 @@
                         твір. До занять з вами він би на це потратив цілий день і купу
                         моїх нервів. А так справився за 40 хвилин!!!!</p>
                 </li>
-                <li class="feedbacks__item">
+                <li class="feedbacks__item wow fadeInRight">
                     <span class="feedbacks__item-date">22.02.2025</span><img src="./assets/img/feedbacks/3.png"
                         alt="Відгук від користувача 3" class="feedbacks__item-img">
                     <h4 class="feedbacks__item-name">Оксана</h4>
@@ -168,28 +170,29 @@
 
         <!-- SIGN UP -->
         <section class="sign" id="sign">
-            <div class="sign__col">
+            <div class="sign__col wow fadeInLeft">
                 <img src="./assets/img/sign-img.webp" alt="Запис на консультацію" class="sign__img">
             </div>
             <div class="sign__col">
                 <form action="" class="sign__form-wrapper">
-                    <h3 class="section-title">Запис</h3>
+                    <h3 class="section-title wow fadeInDown">Запис</h3>
 
                     <div class="sign__form">
-                        <input class="sign__form-input" type="text" id="name" name="name" placeholder="Ім'я" required>
-                        <input class="sign__form-input" type="text" id="email" name="email"
+                        <input class="sign__form-input wow bounceInLeft" type="text" id="name" name="name"
+                            placeholder="Ім'я" required>
+                        <input class="sign__form-input wow bounceInRight" type="text" id="email" name="email"
                             placeholder="Електронна адреса або телефон" required>
-                        <input class="sign__form-input" type="number" id="age" name="age" min="1" max="30"
-                            placeholder="Вік дитини" required>
-                        <textarea class="sign__form-input sign__form-textarea" id="interest" name="interest"
-                            placeholder="Що вас цікавить?" required></textarea>
-                        <input class="sign__form-input" type="text" id="time" name="time"
+                        <input class="sign__form-input wow bounceInLeft" type="number" id="age" name="age" min="1"
+                            max="30" placeholder="Вік дитини" required>
+                        <textarea class="sign__form-input sign__form-textarea wow bounceInRight" id="interest"
+                            name="interest" placeholder="Що вас цікавить?" required></textarea>
+                        <input class="sign__form-input wow bounceInLeft" type="text" id="time" name="time"
                             placeholder="Бажаний час для консультації" required>
                         <p id="formStatus"></p>
 
                     </div>
 
-                    <button class="purple-btn" type="submit">Записатися на консультацію</button>
+                    <button class="purple-btn wow fadeInUp" type="submit">Записатися на консультацію</button>
                 </form>
             </div>
         </section>
@@ -198,20 +201,20 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer__row">
+        <div class="footer__row wow fadeInDown">
             <h3 class="section-title">Залишайтеся на зв'язку</h3>
             <ul class="footer__socials">
                 <li><a href="https://www.facebook.com/share/g/16fCTLdx5B/" class="footer__socials-link"><img
                             src="./assets/icons/facebook.png" alt="Facebook" class="footer__socials-icon"></a></li>
                 <li><a href="https://www.instagram.com/sobar.school/" class="footer__socials-link"><img
                             src="./assets/icons/instagram.png" alt="Instagram" class="footer__socials-icon"></a></li>
-                <li><a href="#" class="footer__socials-link"><img src="./assets/icons/telegram.png" alt="Telegram"
-                            class="footer__socials-icon"></a></li>
-                <li><a href="#" class="footer__socials-link"><img src="./assets/icons/email.png" alt="Email"
-                            class="footer__socials-icon"></a></li>
+                <li><a href="https://t.me/bioverys" class="footer__socials-link"><img src="./assets/icons/telegram.png"
+                            alt="Telegram" class="footer__socials-icon"></a></li>
+                <!-- <li><a href="#" class="footer__socials-link"><img src="./assets/icons/email.png" alt="Email"
+                            class="footer__socials-icon"></a></li> -->
             </ul>
         </div>
-        <div class="footer__row">
+        <div class="footer__row wow fadeInUp">
             <p class="text-medium">© 2025 Sobar.school. Всі права захищені.</p>
             <div class="footer__docs">
                 <a href="./policy.html" class="footer__link">Політика конфіденційності</a>
@@ -219,6 +222,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
