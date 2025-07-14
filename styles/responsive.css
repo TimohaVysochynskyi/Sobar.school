@@ -27,7 +27,7 @@
   .about {
     flex-direction: column;
     gap: 32px;
-    text-align: center;
+    text-align: justify;
   }
   .about__col:first-child,
   .about__col:last-child {

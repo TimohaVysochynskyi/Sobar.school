@@ -1,0 +1,157 @@
+.custom-container {
+  display: flex;
+  gap: 50px;
+}
+.timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+}
+.timeline-line {
+  width: 10px;
+  height: 100vh;
+  background-color: #a79cee;
+  border-radius: 8px;
+}
+.timeline-block {
+  position: relative;
+  position: absolute;
+  left: -95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeline-point-line {
+  width: 10px;
+  height: 80px;
+  background-color: #8f7cc9;
+  position: absolute;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.timeline-point {
+  width: 40px;
+  height: 40px;
+  background-color: #a79cee;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Story Section */
+.story {
+  padding: 140px 40px; /* Враховано fixed header */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.story__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+}
+.story__col:first-child {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.story__col:last-child {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.story__img {
+  width: 270px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 140px 140px 24px 24px;
+  border: 18px solid #ffeec4;
+  box-shadow: 2px 2px 4px #888;
+}
+.story__text {
+  font-size: 16px;
+  color: #000;
+  font-family: "Montserrat Alternates Regular", sans-serif;
+  line-height: 1.8;
+}
+
+/* Why SOBAR.SCHOOL Section */
+.why {
+  background-color: #ffeec4;
+  padding: 40px 72px;
+  border-radius: 24px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.why__text {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 40px 0;
+}
+.gallery__grid {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery__item {
+  width: calc(33.333% - 16px);
+  text-align: center;
+}
+.gallery__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.gallery__item p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #000;
+  font-family: "Montserrat Alternates Regular", sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .story {
+    flex-direction: column;
+  }
+  .story__col:first-child,
+  .story__col:last-child {
+    width: 100%;
+  }
+  .story__img {
+    width: 200px;
+    height: 250px;
+  }
+  .gallery__item {
+    width: calc(50% - 16px);
+  }
+  .timeline-wrapper {
+    display: none;
+  }
+  .timeline-block {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .story {
+    padding: 24px 0;
+  }
+  .story__img {
+    width: 150px;
+    height: 200px;
+  }
+  .gallery__item {
+    width: 100%;
+  }
+}
