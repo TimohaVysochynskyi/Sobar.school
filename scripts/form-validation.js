@@ -6,19 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     const name = form.name.value.trim();
-    const email = form.email.value.trim();
+    const phone = form.phone.value.trim();
     const age = parseInt(form.age.value);
     const interest = form.interest.value.trim();
     const time = form.time.value.trim();
 
-    if (!name || !email || isNaN(age) || !interest || !time) {
+    if (!name || !phone || isNaN(age) || !interest || !time) {
       status.textContent = "Будь ласка, заповніть усі поля.";
       status.style.color = "red";
       return;
     }
 
-    if (!validateEmailOrPhone(email)) {
-      status.textContent = "Введіть правильний email або номер телефону.";
+    if (!validatePhone(phone)) {
+      status.textContent = "Введіть правильний номер телефону.";
       status.style.color = "red";
       return;
     }
@@ -26,9 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     form.submit();
   });
 
-  function validateEmailOrPhone(input) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  function validatePhone(input) {
     const phoneRegex = /^\+?\d{9,15}$/;
-    return emailRegex.test(input) || phoneRegex.test(input);
+    return phoneRegex.test(input);
   }
 });

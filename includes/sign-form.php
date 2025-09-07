@@ -11,8 +11,8 @@
             <div class="sign__form">
                 <input class="sign__form-input wow bounceInLeft" type="text" id="name" name="name" placeholder="Ім'я"
                     required>
-                <input class="sign__form-input wow bounceInRight" type="text" id="email" name="email"
-                    placeholder="Електронна адреса або телефон" required>
+                <input class="sign__form-input wow bounceInRight" type="text" id="phone" name="phone"
+                    placeholder="Номер телефону" required>
                 <input class="sign__form-input wow bounceInLeft" type="number" id="age" name="age" min="1" max="30"
                     placeholder="Вік дитини" required>
                 <textarea class="sign__form-input sign__form-textarea wow bounceInRight" id="interest" name="interest"

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/sign-form.css?time=<?php echo time(); ?>">
 
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/responsive.css?time=<?php echo time(); ?>">
     <link rel="stylesheet" href="./styles/animate.css">
 
 </head>
@@ -157,6 +157,18 @@
                         почитать. <br>Изменилась скорость чтения, плюс больше стал читать интуитивно, а не каждую букву.
                         <br>Может читать сам, запоминает и пересказывает прочитанное. Осиливает бОльшее количество
                         страниц.
+                    </p>
+                </li>
+                <li class="feedbacks__item wow fadeInRight">
+                    <span class="feedbacks__item-date">19.07.2025</span><img src="./assets/img/feedbacks/4.png"
+                        alt="Відгук від користувача 4" class="feedbacks__item-img">
+                    <h4 class="feedbacks__item-name">Анна</h4>
+                    <p class="text-regular feedbacks__item-text">
+                        Вважаю, що нам дуже пощастило знайти фахівця такого рівня. Якщо чесно, я навіть не сподівалася
+                        на аж настільки серйозні результати, які ми зараз маємо після кількох років корекційних занять -
+                        не лише легкість читання (у нас дислексія), але й відчуття і розуміння мови, мовних структур і
+                        зворотів, зацікавлення вивченням української і іноземних мов. Набагато більше, ніж я могла
+                        очікувати від корекційних занять. Дуже вдячна і, звичайно, рекомендую!
                     </p>
                 </li>
             </ul>
